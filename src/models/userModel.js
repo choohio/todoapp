@@ -20,6 +20,10 @@ const userSchema = new mongoose.Schema({
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,
     verifyTokenExpiry: Date,
+    addedAt: {
+        type: Date,
+        default: Date.now
+    }
 }
 )
 
